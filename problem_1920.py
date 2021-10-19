@@ -6,6 +6,6 @@
 
 def buildArray(self, nums: List[int]) -> List[int]:
     new_arr = []
-    for i in range(0, len(nums)):
-        new_arr.append(nums[nums[i]])
+    for num in nums:
+        new_arr.append(nums[num])
     return new_arr
