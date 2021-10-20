@@ -7,10 +7,10 @@
 # Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.
 
 def finalValueAfterOperations(self, operations):
-    final_value = 0
-    for operation in operations:
-        if operation == '++X' or operation == 'X++':
-            final_value += 1
-        elif operation == '--X' or operation == 'X--':
-            final_value -= 1
-        return final_value
+    ans = 0
+    for i in operations:
+        if i == '++X' or i == 'X++':
+            ans += 1
+        else:
+            ans -= 1
+    return ans
